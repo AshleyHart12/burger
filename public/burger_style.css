@@ -2,3 +2,6 @@ body {
     background-color: yellow;
 }
 
+#image {
+    background-image: url("../assets/burgerPattern.jpg");
+}

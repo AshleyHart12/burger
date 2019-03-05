@@ -1,7 +1,7 @@
 <div class="container">
 
-    <div class="row">
-        <img src="burger.png" alt="drawing of a burger">
+    <div class="row" id="image">
+        <img src="../../assets/burgerPattern.jpg" alt="drawing of a burger">
     </div>
 
     <div class="row">
@@ -13,18 +13,16 @@
     <form class="create-form">
 
         <div class="form-group">
-            <label for="ca">Add a burger you'd like to eat:</label>
-            <input type="text" id="burgerName" name="name">
-            <button type="submit">Add Burger</button>
+            <label for="newBurger">Add a burger you'd like to eat:</label>
+            <input type="text" id="newBurger" name="burger">
+            <button type="submit" id="addBurger" class="btn btn-success">Add Burger</button>
         </div>
         &nbsp;
-
-        
+            
     </form>
 
-
-    <!-- Undevoured Burgers -->
-    <div class="row">
+<div class="row"></div>
+    <!-- Undevoured Burgers -->    
     <div class="col-sm-6">
         <div class="panel panel-default">
             <div class="panel-heading" id="lefthead"><strong>New Burgers</strong></div>
