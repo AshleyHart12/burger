@@ -14,8 +14,8 @@ var connection = mysql.createConnection({
     connection = mysql.createConnection({
       host: 'localhost',
       user: 'root',
-      password: 'hacktheplanet',
-      database: 'todoagain_db'
+      password: 'Noles08!!',
+      database: 'burgers_db'
     });
   };
   
