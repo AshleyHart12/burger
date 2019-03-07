@@ -4,6 +4,7 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
  https://pure-peak-65047.herokuapp.com/
  
  <h3>Technologies Used
+ <br>
 * HTML
 * CSS
 * Javascript
