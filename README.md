@@ -5,6 +5,5 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
  
  <h3>Technologies Used
  <br>
-- HTMl
- - CSS
+ * HTMl
  
