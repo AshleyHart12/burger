@@ -7,4 +7,4 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
  
  ### Technologies Used
 
-HTML,CSS, Node.js, Handlebars, MySQL, ORM, Express NPM package
+HTML, CSS, Node.js, Handlebars, MySQL, ORM, Express NPM package
