@@ -1,4 +1,4 @@
-var connection = require("./connection.js"); // MAKE SURE FILE PATH IS CORRECT
+var connection = require("../config/connection.js"); // MAKE SURE FILE PATH IS CORRECT
 
 function printQuestionMarks(num) {
     var arr = [];
@@ -23,8 +23,6 @@ function objToSql(ob) {
         if (typeof value === "string" && value.indexOf(" ") >= 0) {
           value = "'" + value + "'";
         }
-        // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-        // e.g. {sleepy: true} => ["sleepy=true"]
         arr.push(key + "=" + value);
       }
     }
@@ -74,6 +72,7 @@ updateOne: function(table, objColVals, condition, cb) {
     queryString += objToSql(objColVals);
     queryString += " WHERE ";
     queryString += condition;
+    console.log(queryString);
 
     connection.query(queryString, function(err, result) {
         if(err) {
@@ -83,10 +82,12 @@ updateOne: function(table, objColVals, condition, cb) {
     });
 },
 // DeleteOne
-delete: function(table, condition, cb) {
+deleteOne: function(table, condition, cb) {
     var queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
     queryString += condition;
+    console.log(queryString);
+
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
